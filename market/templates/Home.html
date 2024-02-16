@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Digital Product Market
+{% endblock %}
+{% block content %}
+<br>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark" style="color:white" id="div_hov01">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal" id="key_text01">Digital Product Market</h1>
+            <p class="lead font-weight-normal">Start purchasing products by clicking the link below</p>
+            <a class="btn btn-primary" href="{{ url_for('market_page') }}" id="btn">Get Started</a>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style>
+        #btn:hover{
+            box-shadow: 0px 0px 10px rgb(81, 81, 250);
+        }
+        #div_hov01:hover{
+            box-shadow: 0px 0px 10px #444444;
+        }
+        #key_text01{
+        text-transform: uppercase;
+        font-weight: bold;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: 200% auto;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: textclip 2s linear infinite;
+        }
+
+        @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+        }
+    </style>
+{% endblock %}
